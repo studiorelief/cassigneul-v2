@@ -1,0 +1,59 @@
+/*
+ *============================================================================
+ * COMPONENT : HOME / HUB
+ *============================================================================
+ */
+
+import 'swiper/css/bundle';
+
+import Swiper from 'swiper/bundle';
+
+export function initHomeHubSlider() {
+  const swipers = document.querySelectorAll('.swiper.is-home-hub');
+
+  if (swipers.length === 0) {
+    return;
+  }
+
+  swipers.forEach((swiperEl) => {
+    new Swiper(swiperEl as HTMLElement, {
+      direction: 'horizontal',
+      centeredSlides: false,
+      speed: 1000,
+      grabCursor: true,
+      allowTouchMove: true,
+      keyboard: true,
+      mousewheel: {
+        forceToAxis: true,
+        sensitivity: 1,
+        releaseOnEdges: true,
+        eventsTarget: 'container',
+      },
+      //   pagination: {
+      //     el: '.swiper-pagination-wrapper',
+      //     bulletClass: 'swiper-bullet',
+      //     bulletActiveClass: 'swiper-bullet-active',
+      //     clickable: true,
+      //   },
+      //   navigation: {
+      //     nextEl: '.reviews_right-button',
+      //     prevEl: '.reviews_left-button',
+      //   },
+      touchEventsTarget: 'wrapper',
+      breakpoints: {
+        320: {
+          slidesPerView: 1.5,
+          spaceBetween: 16 * 2.5,
+        },
+        768: {
+          slidesPerView: 'auto',
+          spaceBetween: 16 * 2.5,
+        },
+        992: {
+          slidesPerView: 'auto',
+          spaceBetween: 16 * 5,
+        },
+      },
+    });
+  });
+}

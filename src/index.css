@@ -1,0 +1,38 @@
+.swiper-button-disabled {
+  opacity: 0.1 !important;
+  pointer-events: none !important;
+}
+
+.nav_side_cards:hover .nav_side_line {
+  width: 50%;
+}
+
+.nav_side_cards:hover .nav_side_overlay {
+  opacity: 0.2;
+}
+
+.hub_cards:hover .hub_asset {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px 0px;
+  transform: scale(0.985);
+}
+
+.hub_preview-wrapper .hub_cards:hover .hub_asset {
+  transform: scale(1);
+}
+
+.footer_link:hover .footer_link-line {
+  width: 100%;
+}
+
+.encheres_cards:hover .encheres_asset-w {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px 0px;
+  transform: scale(0.985);
+}
+
+.hub_preview-wrapper .hub_cards:hover .hub_asset {
+  transform: scale(1);
+}
+
+.biographie_cards strong {
+  color: var(--_theme---background--primary);
+}
