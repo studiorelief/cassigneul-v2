@@ -22,7 +22,7 @@ export function initHomeHeroSwiper() {
       slidesPerView: 1,
       spaceBetween: 0,
       centeredSlides: false,
-      autoHeight: false,
+      // autoHeight: true,
       speed: 1000,
       grabCursor: true,
       allowTouchMove: true,
@@ -44,11 +44,6 @@ export function initHomeHeroSwiper() {
       //     prevEl: '.reviews_left-button',
       //   },
       touchEventsTarget: 'wrapper',
-      breakpoints: {
-        320: {
-          autoHeight: true,
-        },
-      },
     });
   });
 }
