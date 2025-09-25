@@ -48,6 +48,7 @@ export function initArtisteGalerieSlider() {
       breakpoints: {
         320: {
           slidesPerView: 3,
+          centeredSlides: true,
           spaceBetween: 16 * 2.5,
         },
         768: {

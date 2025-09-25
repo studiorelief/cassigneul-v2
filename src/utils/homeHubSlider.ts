@@ -42,8 +42,18 @@ export function initHomeHubSlider() {
       touchEventsTarget: 'wrapper',
       breakpoints: {
         320: {
-          slidesPerView: 1.5,
-          spaceBetween: 16 * 2.5,
+          slidesPerView: 'auto',
+          freeMode: {
+            enabled: true,
+            sticky: false,
+            momentumBounce: false,
+          },
+          // autoHeight: true,
+          spaceBetween: 16 * 1.5,
+          navigation: {
+            nextEl: '.swiper-arrow.is-right',
+            // prevEl: '.swiper-arrow.is-left',
+          },
         },
         768: {
           slidesPerView: 'auto',

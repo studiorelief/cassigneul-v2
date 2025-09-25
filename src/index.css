@@ -36,3 +36,7 @@
 .biographie_cards strong {
   color: var(--_theme---background--primary);
 }
+
+.biographie_cards.is-home-hub {
+  width: 85%;
+}

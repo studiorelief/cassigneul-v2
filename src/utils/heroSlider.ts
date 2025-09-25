@@ -18,9 +18,11 @@ export function initHomeHeroSwiper() {
   swipers.forEach((swiperEl) => {
     new Swiper(swiperEl as HTMLElement, {
       direction: 'horizontal',
+      loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
       centeredSlides: false,
+      autoHeight: false,
       speed: 1000,
       grabCursor: true,
       allowTouchMove: true,
@@ -42,6 +44,11 @@ export function initHomeHeroSwiper() {
       //     prevEl: '.reviews_left-button',
       //   },
       touchEventsTarget: 'wrapper',
+      breakpoints: {
+        320: {
+          autoHeight: true,
+        },
+      },
     });
   });
 }

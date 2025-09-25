@@ -44,7 +44,7 @@ export function initArtisteAtelierSlider() {
       touchEventsTarget: 'wrapper',
       breakpoints: {
         320: {
-          slidesPerView: 1,
+          slidesPerView: 'auto',
           spaceBetween: 16 * 2.5,
         },
         768: {

@@ -25,8 +25,9 @@ export function initHubPreviewSlider() {
     new Swiper(swiperEl as HTMLElement, {
       direction: 'horizontal',
       slidesPerView: 1,
-      spaceBetween: 0,
+      spaceBetween: 1.5 * 16,
       centeredSlides: true,
+
       speed: 1000,
       grabCursor: true,
       allowTouchMove: true,
@@ -51,25 +52,7 @@ export function initHubPreviewSlider() {
  *
  * Sets up click handlers for cards to open preview popups with the corresponding slider.
  * When a card is clicked, it opens a popup and navigates to the matching slide based on the slug.
- *
- * @example
- * HTML Structure:
- * ```html
- * <!-- Clickable cards -->
- * <div card="project-1">Card 1</div>
- * <div card="project-2">Card 2</div>
- *
- * <!-- Popup wrapper -->
- * <div class="hub_preview-wrapper">
- *   <div class="hub_preview-background"></div>
- *   <div class="swiper is-hub-preview">
- *     <div class="swiper-wrapper">
- *       <div class="swiper-slide" preview="project-1">Content 1</div>
- *       <div class="swiper-slide" preview="project-2">Content 2</div>
- *     </div>
- *   </div>
- * </div>
- * ```
+
  *
  * @description
  * - Cards with `card="{slug}"` attribute will trigger popup opening
