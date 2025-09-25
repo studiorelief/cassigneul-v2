@@ -106,7 +106,7 @@ export function showHubPreviewPopup() {
         // Show the popup with smooth transition
         popupWrapper.style.display = 'flex';
         popupWrapper.style.position = 'fixed';
-        popupWrapper.style.zIndex = '2';
+        popupWrapper.style.zIndex = '102';
         popupWrapper.style.opacity = '0';
         popupWrapper.style.transition = 'opacity 300ms';
         requestAnimationFrame(() => {
